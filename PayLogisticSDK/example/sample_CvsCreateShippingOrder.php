@@ -1,7 +1,7 @@
 ﻿<?php
     // 一般物流訂單建立
     define('HOME_URL', 'http://www.sample.com.tw/logistics_dev');
-    require('Ecpay.Logistic.Integration.php');
+    require('../sdk/Ecpay.Logistic.Integration.php');
     try {
         $AL = new EcpayLogistics();
         $AL->HashKey = '5294y06JbISpM5x9';
@@ -25,7 +25,7 @@
             'ReceiverEmail' => 'test_emjhdAJr@test.com.tw',
             'TradeDesc' => '測試交易敘述',
             'ServerReplyURL' => HOME_URL . '/ServerReplyURL.php',
-            'ClientReplyURL' => HOME_URL . '/ClientReplyURL.php',
+            // 'ClientReplyURL' => HOME_URL . '/ClientReplyURL.php',
             'LogisticsC2CReplyURL' => HOME_URL . '/LogisticsC2CReplyURL.php',
             'Remark' => '測試備註',
             'PlatformID' => '',

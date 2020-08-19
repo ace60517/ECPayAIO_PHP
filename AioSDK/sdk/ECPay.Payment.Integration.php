@@ -586,7 +586,7 @@ abstract class ECPay_Aio
         curl_setopt($ch, CURLOPT_URL, $ServiceURL);
         curl_setopt($ch, CURLOPT_HEADER, FALSE);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, TRUE);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_POST, TRUE);
         curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($parameters));
         $rs = curl_exec($ch);

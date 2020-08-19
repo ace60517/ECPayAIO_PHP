@@ -1,6 +1,6 @@
 <?php
     // 萊爾富列印小白單(萊爾富超商C2C)
-    require('Ecpay.Logistic.Integration.php');
+    require('../sdk/Ecpay.Logistic.Integration.php');
     try {
         $AL = new EcpayLogistics();
         $AL->HashKey = 'XBERn1YOvpM9nfZc';

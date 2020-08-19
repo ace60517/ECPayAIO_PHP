@@ -2216,7 +2216,7 @@ if (!class_exists('EcpayLogistics', false)) {
             curl_setopt($Ch, CURLOPT_URL, $ServiceURL);
             curl_setopt($Ch, CURLOPT_HEADER, false);
             curl_setopt($Ch, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($Ch, CURLOPT_SSL_VERIFYPEER, true);
+            curl_setopt($Ch, CURLOPT_SSL_VERIFYPEER, false);
             curl_setopt($Ch, CURLOPT_POST, true);
             curl_setopt($Ch, CURLOPT_POSTFIELDS, $SendInfo);
             $Result = curl_exec($Ch);

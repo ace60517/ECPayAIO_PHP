@@ -1,7 +1,7 @@
 <?php
 
     // 更新門市通知(統一超商C2C)
-    require('Ecpay.Logistic.Integration.php');
+    require('../sdk/Ecpay.Logistic.Integration.php');
 
     try {
         // 收到綠界科技的更新門市通知，並判斷檢查碼是否相符

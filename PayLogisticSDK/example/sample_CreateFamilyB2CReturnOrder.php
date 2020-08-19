@@ -1,7 +1,7 @@
 ﻿<?php
     // 超商取貨逆物流訂單(全家超商B2C)
-    define('HOME_URL', 'http://www.sample.com.tw/logistics_dev');
-    require('Ecpay.Logistic.Integration.php');
+    define('HOME_URL', 'https://www.sample.com.tw/logistics_dev');
+    require('../sdk/Ecpay.Logistic.Integration.php');
     try {
         $AL = new EcpayLogistics();
         $AL->HashKey = '5294y06JbISpM5x9';

@@ -1,6 +1,6 @@
 ﻿<?php
     // 產生托運單(宅配)/一段標(超商取貨)
-    require('Ecpay.Logistic.Integration.php');
+    require('../sdk/Ecpay.Logistic.Integration.php');
     try {
         $AL = new EcpayLogistics();
         $AL->HashKey = '5294y06JbISpM5x9';

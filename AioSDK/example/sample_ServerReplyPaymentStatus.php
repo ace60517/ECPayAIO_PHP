@@ -1,7 +1,7 @@
 <?php
 
     // 付款結果通知
-    require('ECPay.Payment.Integration.php');
+    require('../sdk/ECPay.Payment.Integration.php');
 
     try {
         // 收到綠界科技的付款結果訊息，並判斷檢查碼是否相符

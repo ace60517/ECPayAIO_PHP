@@ -1,6 +1,6 @@
 <?php
     // 產生B2C測標資料
-    require('Ecpay.Logistic.Integration.php');
+    require('../sdk/Ecpay.Logistic.Integration.php');
     try {
         $AL = new EcpayLogistics();
         $AL->HashKey = '5294y06JbISpM5x9';

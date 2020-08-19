@@ -1,7 +1,7 @@
 <?php
 
     // 物流狀態通知
-    require('Ecpay.Logistic.Integration.php');
+    require('../sdk/Ecpay.Logistic.Integration.php');
 
     try {
         // 收到綠界科技的物流狀態，並判斷檢查碼是否相符
